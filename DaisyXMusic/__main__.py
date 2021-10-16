@@ -36,13 +36,17 @@ file.close()
 bot = Bot(
     ":memory:",
     API_ID,
-    API_ID1,
     API_HASH,
+    bot_token=BOT_TOKEN,
+    plugins=dict(root="DaisyXMusic.modules"),
+)
+bot = Bot(
+    ":memory:",
+    API_ID1,
     API_HASH1,
     bot_token=BOT_TOKEN,
     plugins=dict(root="DaisyXMusic.modules"),
 )
-
 bot.start()
 run1()
 run2()
